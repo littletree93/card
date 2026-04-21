@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김선아 — 웹 명함</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-pattern" aria-hidden="true"></div>
+
+    <main class="card" role="main">
+      <header class="card__header">
+        <div class="avatar">
+          <img
+            class="avatar__img"
+            src="images/character.png"
+            width="132"
+            height="158"
+            alt="김선아 프로필 캐릭터"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="card__intro">
+          <p class="eyebrow">Ministry of Finace and Economy</p>
+          <h1 class="name">김선아</h1>
+          <p class="title">재정경제부 공무원</p>
+          <p class="tagline" id="tagline">
+            AI를 공부하는 공무원입니다.
+          </p>
+        </div>
+      </header>
+
+      <section class="card__body" aria-label="연락처">
+        <ul class="contacts">
+          <li class="contact-row">
+            <a
+              class="contact"
+              href="mailto:seonahkim@korea.kr"
+              title="메일 보내기"
+            >
+              <span class="contact__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4 6h16v12H4V6zm0 0l8 6 8-6"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span class="contact__text">
+                <span class="contact__label">이메일</span>
+                <span class="contact__value">seonahkim@korea.kr</span>
+              </span>
+            </a>
+            <button
+              type="button"
+              class="copy-btn"
+              data-copy-btn="seonahkim@korea.kr"
+              aria-label="이메일 복사"
+            >
+              <svg
+                class="copy-btn__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="9"
+                  y="9"
+                  width="10"
+                  height="11"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M15 9V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </li>
+          <li class="contact-row">
+            <a
+              class="contact"
+              href="tel:+821099226306"
+              title="전화 걸기"
+            >
+              <span class="contact__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M6.5 4h4l1.5 4-2.5 2c1.5 3 4 5.5 7 7l2-2.5 4 1.5v4c0 .5-.5 1-1 1C8.5 21 3 15.5 3 8.5c0-.5.5-1 1-1z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span class="contact__text">
+                <span class="contact__label">휴대전화</span>
+                <span class="contact__value">010-9922-6306</span>
+              </span>
+            </a>
+            <button
+              type="button"
+              class="copy-btn"
+              data-copy-btn="010-9922-6306"
+              aria-label="휴대전화 번호 복사"
+            >
+              <svg
+                class="copy-btn__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="9"
+                  y="9"
+                  width="10"
+                  height="11"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                />
+                <path
+                  d="M15 9V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="card__footer">
+        <p class="toast" id="toast" role="status" aria-live="polite" hidden></p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
